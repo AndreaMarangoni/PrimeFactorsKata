@@ -1,0 +1,6 @@
+### Prime Factors Kata
+
+Just a kata to have fun and familiarize better with TDD, gtest, and git.
+
+Project developed with Eclipse Indigo.
+Require gtest and pystring libraries.

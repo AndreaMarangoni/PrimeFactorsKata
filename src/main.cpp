@@ -27,12 +27,8 @@ TEST(PrimeFactorsKata, GenerateThreeGiveThree) {
 	ASSERT_EQ(PrimeFactorsKataTest::list("3"), PrimeFactorsKata::generate(3));
 }
 
-TEST(PrimeFactorsKata, GenerateFourGiveTwo) {
-	ASSERT_EQ(PrimeFactorsKataTest::list("2"), PrimeFactorsKata::generate(4));
-}
-
-TEST(PrimeFactorsKata, GenerateSixGiveTwoAndThree) {
-	ASSERT_EQ(PrimeFactorsKataTest::list("2,3"), PrimeFactorsKata::generate(6));
+TEST(PrimeFactorsKata, GenerateFourGiveTwoTwo) {
+	ASSERT_EQ(PrimeFactorsKataTest::list("2,2"), PrimeFactorsKata::generate(4));
 }
 
 int main(int argc, char **argv) {

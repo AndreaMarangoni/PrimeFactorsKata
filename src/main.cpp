@@ -9,9 +9,18 @@
 #include <gtest/gtest.h>
 #include <list>
 
+#include "../test/PrimeFactorsKataTest.h"
 #include "PrimeFactorsKata.h"
 
-using std::list;
+using std::vector;
+
+TEST(PrimeFactorsKata, GenerateOneGiveEmptyList) {
+	ASSERT_EQ(PrimeFactorsKataTest::list(""), PrimeFactorsKata::generate(1));
+}
+
+TEST(PrimeFactorsKata, GenerateTwoGiveTwo) {
+	ASSERT_EQ(PrimeFactorsKataTest::list("2"), PrimeFactorsKata::generate(2));
+}
 
 int main(int argc, char **argv) {
 	::testing::InitGoogleTest(&argc, argv);

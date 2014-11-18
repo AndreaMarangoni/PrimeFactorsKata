@@ -8,13 +8,13 @@
 #ifndef PRIMEFACTORSKATA_H_
 #define PRIMEFACTORSKATA_H_
 
-#include <list>
+#include <vector>
 
 class PrimeFactorsKata {
 public:
 	PrimeFactorsKata();
 	virtual ~PrimeFactorsKata();
-	static std::list<int> generate(int number);
+	static std::vector<int> generate(int number);
 };
 
 #endif /* PRIMEFACTORSKATA_H_ */

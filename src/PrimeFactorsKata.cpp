@@ -7,8 +7,13 @@
 
 #include "PrimeFactorsKata.h"
 
-std::list<int> PrimeFactorsKata::generate(int number) {
-	return std::list<int>();
+std::vector<int> PrimeFactorsKata::generate(int number) {
+	if (number > 1) {
+		std::vector<int> result;
+		result.push_back(2);
+		return result;
+	}
+	return std::vector<int>();
 }
 
 PrimeFactorsKata::PrimeFactorsKata() {

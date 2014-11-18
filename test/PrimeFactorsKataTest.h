@@ -8,13 +8,16 @@
 #ifndef PRIMEFACTORSKATATEST_H_
 #define PRIMEFACTORSKATATEST_H_
 
-#include <list>
+#include <vector>
+#include <string>
 
 class PrimeFactorsKataTest {
 public:
 	PrimeFactorsKataTest();
 	virtual ~PrimeFactorsKataTest();
-
+	static std::vector<int> list(const std::string& list);
+private:
+	static int string2int(const std::string& number);
 };
 
 #endif /* PRIMEFACTORSKATATEST_H_ */

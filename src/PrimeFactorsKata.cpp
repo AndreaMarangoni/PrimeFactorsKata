@@ -8,12 +8,16 @@
 #include "PrimeFactorsKata.h"
 
 std::vector<int> PrimeFactorsKata::generate(int number) {
+	std::vector<int> result;
 	if (number > 1) {
-		std::vector<int> result;
-		result.push_back(2);
-		return result;
+		if (number % 2 == 0) {
+			result.push_back(2);
+		}
+		if (number % 3 == 0) {
+			result.push_back(3);
+		}
 	}
-	return std::vector<int>();
+	return result;
 }
 
 PrimeFactorsKata::PrimeFactorsKata() {

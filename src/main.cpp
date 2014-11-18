@@ -22,6 +22,19 @@ TEST(PrimeFactorsKata, GenerateTwoGiveTwo) {
 	ASSERT_EQ(PrimeFactorsKataTest::list("2"), PrimeFactorsKata::generate(2));
 }
 
+
+TEST(PrimeFactorsKata, GenerateThreeGiveThree) {
+	ASSERT_EQ(PrimeFactorsKataTest::list("3"), PrimeFactorsKata::generate(3));
+}
+
+TEST(PrimeFactorsKata, GenerateFourGiveTwo) {
+	ASSERT_EQ(PrimeFactorsKataTest::list("2"), PrimeFactorsKata::generate(4));
+}
+
+TEST(PrimeFactorsKata, GenerateSixGiveTwoAndThree) {
+	ASSERT_EQ(PrimeFactorsKataTest::list("2,3"), PrimeFactorsKata::generate(6));
+}
+
 int main(int argc, char **argv) {
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();

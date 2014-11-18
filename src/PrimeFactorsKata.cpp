@@ -9,8 +9,11 @@
 
 std::vector<int> PrimeFactorsKata::generate(int number) {
 	std::vector<int> result;
-	if (number > 1) {
-		result.push_back(number);
+	int candidate = 2;
+	for (; number > 1; ++candidate) {
+		for (; number % candidate == 0; number /= candidate) {
+			result.push_back(candidate);
+		}
 	}
 	return result;
 }
